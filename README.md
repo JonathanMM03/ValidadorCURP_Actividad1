@@ -22,31 +22,3 @@ Este paquete Java, diseñado específicamente para aplicaciones JavaFX, ofrece u
    * Conecta los campos de texto `txtCurp` y `txtRfc`, así como los elementos de texto para mostrar los resultados, a los elementos correspondientes en tu archivo FXML.
 3. **Activación de la Validación:**
    * Utiliza los métodos `verificarCurp()`, `verificarRfc()` o `compararCampos()` para iniciar el proceso de validación.
-
-### **Ejemplo Completo**
-
-```java
-// En tu controlador FXML:
-@FXML
-private TextField txtCurp, txtRfc;
-@FXML
-private Label lblResultado;
-
-@FXML
-private void validar() {
-    String curp = txtCurp.getText();
-    String rfc = txtRfc.getText();
-
-    // Ejemplo de CURP y RFC válidos (ajusta según tus necesidades)
-    String curpValido = "CURP123456ABCDEFGH0123";
-    String rfcValido = "XAXX010101AAA0";
-
-    // Validación y comparación
-    boolean esValido = validadorController.compararCampos(curp, rfc, curpValido, rfcValido);
-
-    if (esValido) {
-        lblResultado.setText("CURP y RFC válidos y coincidentes.");
-    } else {
-        lblResultado.setText("Error en la validación. Verifica los datos ingresados.");
-    }
-}
