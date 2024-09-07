@@ -15,18 +15,18 @@
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <Label prefHeight="20.0" prefWidth="80.0" text="CURP" />
-                  <TextField fx:id="txtCurp" onInputMethodTextChanged="#verifiarCurp" />
+                  <TextField fx:id="txtCurp" onInputMethodTextChanged="#verificarCurp" />
                   <Text fx:id="txtMensajeCurp" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <Label prefHeight="20.0" prefWidth="80.0" text="RFC" />
-                  <TextField fx:id="txtRfc" />
+                  <TextField fx:id="txtRfc" onInputMethodTextChanged="#verificarRfc" />
                   <Text fx:id="txtMensajeRfc" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" onAction="#verifiarCurp" text="Button" />
+            <Button mnemonicParsing="false" onAction="#compararCampos" text="Validar" />
          </children>
       </VBox>
    </children>
