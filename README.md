@@ -4,9 +4,9 @@
 
 Este paquete Java, diseñado específicamente para aplicaciones JavaFX, ofrece una clase central, `ValidadorController`, que facilita la validación robusta de CURP y RFC mexicanos.
 
-**Carlos Gabriel Valdivia López**
-**Miguel Angel Rodriguez Padilla**
-**Jonathan Moreno Muñoz**
+**Carlos Gabriel Valdivia López**\n
+**Miguel Angel Rodriguez Padilla**\n
+**Jonathan Moreno Muñoz**\n
 
 **Funcionalidades Clave:**
 
